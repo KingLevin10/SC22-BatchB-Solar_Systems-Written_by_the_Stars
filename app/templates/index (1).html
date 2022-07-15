@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Agency - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Edu+TAS+Beginner&family=Lora:wght@500&display=swap" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/styles-product_spec.css" rel="stylesheet" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      <style>
+        
+        #head {
+          color: white;
+          text-shadow: 0px 0px 10px #000;
+          font-family: 'Lora', serif;
+        }
+        
+        nav {
+          font-family: 'Dosis', sans-serif;
+        }
+        
+        body {
+          font-family: 'Dosis', sans-serif;
+          font-size: 1.2em;
+        }
+        
+      </style>
+      
+    </head>
+
+    <body id="page-top">
+<!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('team') }}">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('shakespeare') }}">Try Shakespeare Model</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('poe') }}">Try Poe Model</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.ai-camp.org/">AI Camp</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+        <!-- Masthead-->
+        <header class="masthead" style="background-image: url({{ url_for('static', filename= 'images/betterbackground.jpg') }}); background-size: cover;" data-image-width="1280" data-image-height="913">
+            <div class="container" id="head">
+                <div class="masthead-heading text-uppercase">Written by the Stars</div>
+                <div id="custom" class="masthead-subheading">Custom Short Stories in the Style of William Shakespeare and Edgar Allan Poe</div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Product Spec</h2>
+                    <h3 class="section-subheading text-muted">Team Solar Systems</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/images/about/venus.jpg" alt="..." /></div>
+                        <div class="timeline-panel"s>
+                            <div class="timeline-heading">
+                                <h4 class="subheading">The Project</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">A project where you input your prompt and get out a short story of your choice: a tragedy from Edgar Allen Poe, or a comedy from William Shakespeare. </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/images/about/mars.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">The Dataset</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">We used various datasets to train our model. To train our model to write in the style of Poe, we used Edgar Allen Poe's Corpus of Short Stories and Edgar Allen Poe Complete Works. To write in the model of Shakespeare, we used Shakespeare's plays, the Complete Works of William Shakespeare, and The Complete William Shakespeare Plays. These datasets were selected and preprocessed because they pertained to our genre requirements for each author: tragedy for poe and comedy for shakespeare.
+</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/images/about/jupiter.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">The Model</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">For Shakespeare, we used the model distilgpt2, while for Poe we used the model gpt2.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/images/about/realsaturn.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Use Cases and Expansions</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">This text generation can be used to simulate writing styles of two famous authors using your own keywords. This could be expanded to add more authors with unique writing styles.</p></div>
+                        </div>
+                    </li>
+                                      <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/images/about/neptune.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Challenges Faced</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Finding datasets to use: 
+These were hard to find because we only specifically needed comedies, not tragedies; we had to manually filter out these tragedies from the comedies in .txt files and there were also long training times, unknown errors, and balancing steps and temperature.
+</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                          <img class="rounded-circle img-fluid" src="static/images/about/earth.jpg" alt="..." />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="static/scripts-product_spec.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
