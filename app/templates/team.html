@@ -1,0 +1,163 @@
+<html>
+<!-- Header -->
+<header>
+  <!--
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js">
+-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Edu+TAS+Beginner&family=Lora:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+
+        nav {
+          font-family: 'Dosis', sans-serif;
+        }
+    
+    body {
+      background: linear-gradient(45deg, blue, red);
+      font-family: 'Dosis', sans-serif;
+          font-size: 1.2em;
+    }
+    
+    header {
+          font-family: 'Lora', serif;
+      font-size: 2.4em;
+    }
+    .card-img-top {
+      border-radius: 20px;
+    }
+
+    .card {
+      border-radius: 20px;
+    }
+
+  </style>
+
+</header>
+<body>
+<!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('team') }}">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('shakespeare') }}">Try Shakespeare Model</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('poe') }}">Try Poe Model</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link" href="https://www.ai-camp.org/">AI Camp</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+  <header class="text-center py-5 mb-4">
+  <div class="container">
+    <p class="fw-light text-white">Meet the Team</p>
+  </div>
+  </header>
+  
+<!-- Page Content -->
+<div class="container" id="background">
+  <div class="row">
+    <!-- Team Member 1 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img class="card-img-top" src="static/images/david.png">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">David Levin</h5>
+          <div class="card-text text-black-50">I learned how to use AI Textgen, but with influence from specific writing styles. Some of my hobbies include playing soccer and learning how to fly planes. I also enjoy traveling, with my most recent trip being in Rome.</div>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 2 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="static/images/headshot_jace_square.jpg"
+             class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Jace Mahmood</h5>
+          <div class="card-text text-black-50">Cried a bit while training Shakespeare's AI. Also, I released my second album on Spotify and stuff a few weeks ago. The artist name is Jace Redlake.</div>
+         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/32YzRPtgVwJEAIH7WfOw4M?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 3 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="static/images/Ahikara_Headshot.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Ahikara Sandrasagra</h5>
+          <div class="card-text text-black-50">I learned about machine learning and how important text preprocessing is for obtaining clean datasets. Some of my hobbies include playing basketball, chess, and the piano.</div>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 4 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img class="card-img-top" src="static/images/Saayan.jpg">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Saayan Kalra</h5>
+          <div class="card-text text-black-50">Learned and understands the basic of HTML. My hobbies are Wrestling, Soccer, Baseball, hanging out with friends and working out.</div>
+        </div>
+      </div>
+    </div>
+        <!-- Team Member 5 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="https://cdn.discordapp.com/attachments/992097552054878369/996430484525551706/IMG_1163.png" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Melinda Wu</h5>
+          <div class="card-text text-black-50">Made the google slides interesting and pretty.</div>
+        </div>
+      </div>
+    </div>
+        <!-- Team Member 6 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="https://cdn.discordapp.com/attachments/992097552054878369/996431733769637908/IMG_20220712_110329.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Jacob Evilsizer</h5>
+          <div class="card-text text-black-50">I learned how to train an AI, and I guess I did some stuff.</div>
+        </div>
+      </div>
+    </div>
+        <!-- Team Member 7 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img class="card-img-top" src="static/images/liz.jpg" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Liz Wang</h5>
+          <div class="card-text text-black-50">I am the mentor to the team. Helping the team and seeing the project progress was the best part.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->  
+</body>
+</html>
